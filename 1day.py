@@ -11,7 +11,7 @@ if(y < 0):
     print("Please enter number bigger than zero")
     exit()
 
-while(i < len(x) and 'z' >= x[i] >= 'a'):
+while(i < len(x) and (('z' >= x[i] >= 'a') or ('Z' >= x[i] >= 'A'))):
     i += 1
  
 if(i != len(x) or len(x) == 0):
