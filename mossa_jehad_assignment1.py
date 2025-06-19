@@ -19,7 +19,7 @@ except ValueError:
     print("Please enter a valid number")
     exit()
 
-if(y > 120)
+if(y > 120):
     print("You either broke the world record or just being silly")
     exit()
 
