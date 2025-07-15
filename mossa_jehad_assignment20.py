@@ -25,9 +25,9 @@ def cabin_to_number(cabin):
 	number = int(number)
 	letter = letter.upper()
 
-	multiplier_map = {'A': 1, 'B': 2, 'C': 3}
+	multiplier_map = {'A': 0, 'B': 150, 'C': 300}
 
-	return number * multiplier_map.get(letter, 0)
+	return number + multiplier_map.get(letter, 0)
 
 
 df['Cabin'] = df['Cabin'].apply(cabin_to_number)
